@@ -3,16 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon node index.js"
+    "start": "nodemon node index.js",
+    "build": "microbundle"
   },
-  "author": "",
+  "author": "Pedro David <Peterdavidpc@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.13.1",
     "nodemon": "^2.0.2",
     "socketio": "^1.0.0"
+  },
+  "repository": "https://github.com/peterdavid27/chat-server.git",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "microbundle": "^0.13.3"
   }
 }
