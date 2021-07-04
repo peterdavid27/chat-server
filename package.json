@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
-  "umd:main": "dist/index.umd.js",
-  "module": "dist/index.mjs",
-  "source": "src/index.js",
+  "umd:main": "index.umd.js",
+  "module": "index.mjs",
+  "source": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon node index.js",
-    "build": "microbundle"
+    "build": "microbundle",
+     "prepublish": "npm run build"
   },
   "author": "Pedro David <Peterdavidpc@gmail.com>",
   "license": "ISC",
